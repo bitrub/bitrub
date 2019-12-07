@@ -1,9 +1,9 @@
-// Copyright (c) 2019 The Bitcoin Core developers
+// Copyright (c) 2019 The BitRub Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_UTIL_STRING_H
-#define BITCOIN_UTIL_STRING_H
+#ifndef BITRUB_UTIL_STRING_H
+#define BITRUB_UTIL_STRING_H
 
 #include <string>
 #include <vector>
@@ -31,4 +31,4 @@ inline std::string Join(const std::vector<std::string>& list, const std::string&
     return Join(list, separator, [](const std::string& i) { return i; });
 }
 
-#endif // BITCOIN_UTIL_STRENCODINGS_H
+#endif // BITRUB_UTIL_STRENCODINGS_H

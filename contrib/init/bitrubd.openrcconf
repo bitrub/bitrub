@@ -1,0 +1,33 @@
+# /etc/conf.d/bitrubd: config file for /etc/init.d/bitrubd
+
+# Config file location
+#BITRUBD_CONFIGFILE="/etc/bitrub/bitrub.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITRUBD_USER)
+#BITRUBD_PIDDIR="/var/run/bitrubd"
+
+# What filename to give the pidfile
+#BITRUBD_PIDFILE="${BITRUBD_PIDDIR}/bitrubd.pid"
+
+# Where to write bitrubd data (be mindful that the blockchain is large)
+#BITRUBD_DATADIR="/var/lib/bitrubd"
+
+# User and group to own bitrubd process
+#BITRUBD_USER="bitrub"
+#BITRUBD_GROUP="bitrub"
+
+# Path to bitrubd executable
+#BITRUBD_BIN="/usr/bin/bitrubd"
+
+# Nice value to run bitrubd under
+#BITRUBD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#BITRUBD_OPTS=""
+
+# The timeout in seconds OpenRC will wait for bitrubd to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BITRUBD_SIGTERM_TIMEOUT=600
